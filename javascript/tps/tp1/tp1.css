@@ -1,0 +1,8 @@
+:root {
+    /* On met une couleur par défaut juste pour tester... */
+    --couleur_erreur : blue;
+}
+
+.erreur {
+    border: 2px solid var(--couleur_erreur);
+}
