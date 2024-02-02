@@ -14,8 +14,8 @@ def calculInverse(n,x) :
     return "Pas d'inverse modulaire dsl l'ami"
     
 
-# print(calculInverse(5, 8))
-# print(calculInverse(8,4))
+print(calculInverse(5, 8))
+print(calculInverse(8,4))
 
 
 # ============
@@ -80,7 +80,7 @@ def verif(mods) :
 
  return verif
 
-# print("Premiers ? : ", verif([3, 5, 7]))
-# print("Premiers ? : ", verif([3, 6,  7]))
+print("Premiers ? : ", verif([3, 5, 7]))
+print("Premiers ? : ", verif([3, 6,  7]))
 
 
