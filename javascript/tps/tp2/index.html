@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>TP1</title>
+        <title>TP2</title>
 
-        <link rel="stylesheet" href="./tp1.css">
-
-        <script>
-            console.log("Haut de la page html --> Script dans le head");
-        </script>
-
-        <script src="./src/form-article.js" defer></script>
-        <script src="./src/main.js" defer> </script>
-
+        <!-- <link rel="stylesheet" href="./tp1.css"> -->
     </head>
 
-    <h1>Page des articles</h1>
+    <body>
+        <h1>Page des articles</h1>
 
-    <h2>Ajouter un article</h2>
+        <h2>Ajouter un article</h2>
 
-    <form id="formulaireCreationArticle">
+        <form id="formulaireCreationArticle">
 
-        <label for="titre">Titre</label>
-        <br>
-        <input type="text" name="titre" id="titre">
+            <label for="titre">Titre</label>
+            <br>
+            <input type="text" name="titre" id="titre">
 
-        <br>
+            <br>
 
-        <label for="description">description</label>
-        <br>
-        <textarea id="description" name="description"></textarea>
+            <label for="description">description</label>
+            <br>
+            <textarea id="description" name="description"></textarea>
 
-        <br>
+            <br>
 
-        <input type="submit" value="Creer" id="soumissionArticle">
+            <input type="submit" value="Creer" id="soumissionArticle">
 
-    </form>
+        </form>
 
-    <div id="listeArticles">
+        <div id="listeArticles">
 
-        <h3> Les articles : </h3>
+            <h3> Les articles : </h3>
 
-    </div>
+        </div>
 
-    <body></body>
+        <script src="./src/main.js"></script>
+    </body>
 </html>
