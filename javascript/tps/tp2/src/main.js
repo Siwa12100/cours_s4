@@ -3,6 +3,7 @@ document.documentElement.style.setProperty('--couleur_erreur', 'red');
 
 let monFormulaire = document.getElementById("formulaireCreationArticle");
 
+
 function submitForm(event) {
     console.log("Passe dans le submit form !")
 
