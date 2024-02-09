@@ -3,7 +3,10 @@ import random
 
 # ============
 # Exercice 1 :
-# ============ 
+# ============
+print()
+print("----- Exo 1 : ------")
+print()
 
 def Clefs(k):
     p = sympy.randprime(10**k, 10**(k+1) - 1)
@@ -24,6 +27,30 @@ h_secret = pow(clefs_publique[1], s_secret, clefs_publique[0])
 
 print("Nombre secret (s):", s_secret)
 print("h calculé avec le secret (g^s mod p):", h_secret)
+
+
+# ============
+# Exercice 2 :
+# ============
+print()
+print()
+print("------ Exo 2 ------")
+print()
+
+def Chiffrer(M, clefs_publique):
+    p, g, h = clefs_publique
+    k = random.randint(2, p - 2)
+
+    C1 = pow(g, k, p)
+    C2 = (M * pow(h, k, p)) % p
+
+    return (C1, C2)
+
+M = 42
+chiffre = Chiffrer(M, clefs_publique)
+
+print(f"Message à chiffrer (M): {M}")
+print("Chiffré (C1, C2):", chiffre)
 
 
 
