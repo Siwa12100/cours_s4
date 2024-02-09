@@ -54,3 +54,29 @@ print("Chiffré (C1, C2):", chiffre)
 
 
 
+# ============
+# Exercice 3 :
+# ============
+print()
+print()
+print("------ Exo 3 ------")
+print()
+
+def Dechiffrer(chiffre, clef_privee, clefs_publique):
+    p, _, _ = clefs_publique
+    C1, C2 = chiffre
+
+    inverse_C1_s = pow(C1, clef_privee, p) 
+    M = (C2 * inverse_C1_s) % p
+
+    return M
+
+# Exemple d'utilisation avec le chiffré précédent
+message_dechiffre = Dechiffrer(chiffre, clef_privee, clefs_publique)
+
+print("Chiffré à déchiffrer (C1, C2):", chiffre)
+print("Message déchiffré (M):", message_dechiffre)
+
+
+
+
