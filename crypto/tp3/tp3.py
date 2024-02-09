@@ -1,6 +1,10 @@
 import sympy
 import random
 
+# ============
+# Exercice 1 :
+# ============ 
+
 def Clefs(k):
     p = sympy.randprime(10**k, 10**(k+1) - 1)
     g = random.randint(2, p - 1)
