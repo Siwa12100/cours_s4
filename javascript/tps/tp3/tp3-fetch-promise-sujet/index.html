@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>My awesome blog</title>
+</head>
+
+<body>
+    <h1>My awesome blog</h1>
+
+    <section>
+        <h2>News form</h2>
+
+        <form>
+            <div id="errorForm"></div>
+            <div>
+                <label>Title</label><br/>
+                <input type="text" name="titleToAdd" />
+            </div>
+
+            <div>
+                <label>Description</label><br/>
+                <textarea name="descriptionToAdd"></textarea>
+            </div>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </section>
+
+    <section>
+        <h2>My news</h2>
+        <h3></h3>
+
+        <div id="newsList">
+        </div>
+
+        <button id="exportArticles">Exporter</button>
+    </section>
+
+    <script src="./src/constant.js"></script>
+
+    <!-- en JS il est important dee déclarer les classes dans l'ordre d'utilisation -->
+    <script src="./src/error/required-field-error.js"></script>
+    <script src="./src/dto/article.js"></script>
+    <script src="./src/view/article-html.js"></script>
+    <script src="./src/service/article-service.js"></script>
+
+    <script src="./src/html/form-article.js"></script>
+    <script src="./src/service/log.js"></script>
+    <script src="./src/main .js"></script>
+</body>
+
+</html>
