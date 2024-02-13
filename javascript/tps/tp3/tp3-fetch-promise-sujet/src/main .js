@@ -1,8 +1,13 @@
 const articleService = new ArticleService();
 
-articleService.loadArticlesFromJson(ARTICLES_JSON).forEach(a => {
-    addArticleToHtml(a, '#newsList');
-});
+async function initialisationArticles() {
+    let lesArticles = await articleService.loadArticlesFromJson(ARTICLES_JSON);
+    lesArticles.forEach(a => {
+        addArticleToHtml(a, '#newsList');
+    });
+}
+
+initialisationArticles();
 
 ArticleHtml.displayArticleCount();
 

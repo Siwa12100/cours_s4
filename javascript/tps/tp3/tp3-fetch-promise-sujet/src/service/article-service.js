@@ -1,6 +1,6 @@
 class ArticleService {
 
-    loadArticlesFromJson(articlesJson) {
+    async loadArticlesFromJson(articlesJson) {
         if (!articlesJson instanceof String)
             throw new Error('Chaine JSON non reconnue');
 
