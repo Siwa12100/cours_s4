@@ -9,6 +9,8 @@ async function initialisationArticles() {
 
 initialisationArticles();
 
+console.log(articleService.loadArticlesFromJsonApi("https://jsonplaceholder.typicode.com/posts"));
+
 ArticleHtml.displayArticleCount();
 
 const form = document.querySelector('form');

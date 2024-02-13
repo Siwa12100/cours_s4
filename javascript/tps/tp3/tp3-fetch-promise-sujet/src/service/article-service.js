@@ -13,6 +13,11 @@ class ArticleService {
         return articles;
     }
 
+    async loadArticlesFromJsonApi(cheminApi) {
+        const lesArticles = await fetch(cheminApi);
+        return lesArticles.json();
+    }
+
     exportArticleToJson(articles) {
         const articlesJson = JSON.stringify(articles);
         logMessage(articlesJson, 'log');
