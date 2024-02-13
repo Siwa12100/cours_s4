@@ -1,4 +1,5 @@
 class ArticleService {
+
     loadArticlesFromJson(articlesJson) {
         if (!articlesJson instanceof String)
             throw new Error('Chaine JSON non reconnue');
@@ -14,7 +15,6 @@ class ArticleService {
 
     exportArticleToJson(articles) {
         const articlesJson = JSON.stringify(articles);
-
         logMessage(articlesJson, 'log');
     }
 }

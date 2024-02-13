@@ -5,8 +5,8 @@ function checkForm() {
 
     try {
         let lastId = document.querySelectorAll('#newsList article').length;
-
         return new Article(++lastId, titleToAdd.value, descriptionToAdd.value);
+        
     } catch (error) {
         if (error instanceof RequiredFieldError) {
             const errorForm = form.querySelector('#errorForm');

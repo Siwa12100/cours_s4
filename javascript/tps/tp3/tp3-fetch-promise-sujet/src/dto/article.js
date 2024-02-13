@@ -1,19 +1,21 @@
 class Article {
     id;
+    userId;
     title;
-    description;
+    body;
 
-    constructor(id, title, description) {
+    constructor(id, title, body) {
         if (!title || title.trim() === '') {
             throw new RequiredFieldError('title'); //l'instruction throw permet de déclencher une erreur
         }
 
-        if (!description || description.trim() === '') {
-            throw new RequiredFieldError('description'); //l'instruction throw permet de déclencher une erreur
+        if (!body || body.trim() === '') {
+            throw new RequiredFieldError('body'); //l'instruction throw permet de déclencher une erreur
         }
 
         this.id = id;
         this.title = title;
-        this.description = description;
+        this.body = body;
+        this.userId = 1;
     }
 }
