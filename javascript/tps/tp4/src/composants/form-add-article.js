@@ -7,6 +7,17 @@ export default {
         }
     },
 
+    methods : {
+
+        addNews : function(news) {
+
+            console.log('index.addNews', news);
+            this.allNews.push(news);
+        }
+
+
+    },
+
     template : `<section>
     <h2>News form</h2>
 
@@ -26,7 +37,6 @@ export default {
         <input type="submit" value="Submit" @click="addNews"/>
     </form>
 </section>`
-
     
 }
 
