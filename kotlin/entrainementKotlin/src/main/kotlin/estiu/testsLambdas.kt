@@ -16,3 +16,42 @@ fun premierTestLambda() {
 
     maSecondeLambda(3, "camion")
 }
+
+fun secondTestLambda() {
+
+    var maLambda1 : (Int) -> Unit = {
+        println("Element : " + it)
+    }
+
+    maLambda1(78)
+
+//    var maLambdaIterateur : (String) -> Int = {
+//        monMot ->
+//        println("Element : " + monMot)
+//        monMot.length
+//    }
+//
+//    val maListe = listOf<String>("Coucou","bonjour", "courgette")
+//    var cpt : Int = maListe.forEach(maLambdaIterateur())
+
+    var maLambdaIterateur: (String) -> Int = { monMot ->
+        println("Element : $monMot")
+        monMot.length
+    }
+
+    val maListe = listOf<String>("Coucou", "bonjour", "courgette")
+
+// Utilisation de forEach avec la lambda maLambdaIterateur
+    maListe.forEach { element ->
+        val longueur = maLambdaIterateur(element)
+    }
+}
+
+fun String.crier() : Unit {
+    println(this.toUpperCase())
+}
+
+fun testExtension() {
+
+    "bateau".crier()
+}

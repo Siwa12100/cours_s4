@@ -10,7 +10,10 @@ fun main(args: Array<String>) {
 
 fun troisiemeTestsMain() {
 
-    premierTestLambda()
+    //premierTestLambda()
+    //secondTestLambda()
+    testExtension()
+    testInfix()
 }
 
 fun secondsTestsDansLeMain() {
@@ -26,6 +29,16 @@ fun secondsTestsDansLeMain() {
 
     val monTableau = arrayOf(7, 89, 1, 891)
     testVarArgs(monMot = "lunette", *monTableau.toIntArray())
+}
+
+infix fun Int.coucou(valeur:Int) : Int {
+    println("Coucou " + valeur + " ; base : " + this)
+    return this * valeur
+}
+
+fun testInfix() {
+
+    println("Test infix : " + (3 coucou 6))
 }
 
 fun premiersTestsMain(): Unit {
