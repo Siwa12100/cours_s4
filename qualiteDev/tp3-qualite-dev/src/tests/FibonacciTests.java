@@ -2,6 +2,7 @@ package tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import fibonacci.Fibonacci;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
