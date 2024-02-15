@@ -14,6 +14,10 @@ fun troisiemeTestsMain() {
     //secondTestLambda()
     testExtension()
     testInfix()
+    val tab = arrayOf(12, 71, 128, 12, 1972 , 182)
+    println("Tableau de base : " + tab.joinToString(", "))
+    recupValsPaires(*tab.toIntArray()).forEach({value -> println("--> " + value)})
+    //recupValsPaires(*tab.toIntArray()).forEach { value -> println("--> $value") }
 }
 
 fun secondsTestsDansLeMain() {

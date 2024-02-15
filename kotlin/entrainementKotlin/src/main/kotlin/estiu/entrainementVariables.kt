@@ -104,6 +104,10 @@ fun testVarArgs(monMot : String, vararg  maListe : Int, monAutreMot : String? = 
         }
 }
 
+fun recupValsPaires(vararg maListe : Int) : IntArray{
+        return maListe.filter { it % 2 == 0 }.toIntArray()
+}
+
 fun monCalcul(valeur1 : Int, valeur2 : Int, valeur3 : Int) = (valeur1 + valeur2) * valeur3
 
 fun comparaisonReference1() : Boolean {
