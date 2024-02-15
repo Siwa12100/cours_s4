@@ -3,12 +3,29 @@ import estiu.*
 fun main(args: Array<String>) {
     //println("Hello World!")
     //premiersTestsMain()
-    secondsTestsDansLeMain()
+    //secondsTestsDansLeMain()
+    troisiemeTestsMain()
 
 }
 
+fun troisiemeTestsMain() {
+
+    premierTestLambda()
+}
+
 fun secondsTestsDansLeMain() {
-    
+
+    println("Calcul : " + monCalcul(valeur3 = 7, valeur1 =  90, valeur2 = 2))
+
+    testVarArgs(monMot =  "Adiu ! ", 8,9,12, 89)
+    println("-------------------------")
+    testVarArgs(monMot = "camionnette", 9, 8, 1, 89, 1261, 18261,
+        monAutreMot = "autbous")
+    println("-------------------------")
+    testVarArgs(monMot = "Coucou ! ",  2, 12, 1982 )
+
+    val monTableau = arrayOf(7, 89, 1, 891)
+    testVarArgs(monMot = "lunette", *monTableau.toIntArray())
 }
 
 fun premiersTestsMain(): Unit {

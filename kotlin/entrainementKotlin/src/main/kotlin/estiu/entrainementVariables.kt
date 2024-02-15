@@ -91,6 +91,21 @@ fun testErreur(valeur : Int) : Int {
         return valeur
 }
 
+fun testVarArgs(monMot : String, vararg  maListe : Int, monAutreMot : String? = "tant pis...") {
+
+        println("Mon mot est --> " + monMot)
+        println("Mon autre mot est --> " + monAutreMot)
+
+        var cpt = 1
+
+        for (valeur in maListe) {
+                println("Valeur " + cpt + "/" + maListe.size + " : " + valeur + ".")
+                cpt++
+        }
+}
+
+fun monCalcul(valeur1 : Int, valeur2 : Int, valeur3 : Int) = (valeur1 + valeur2) * valeur3
+
 fun comparaisonReference1() : Boolean {
 
         val v1 : Int = 9
