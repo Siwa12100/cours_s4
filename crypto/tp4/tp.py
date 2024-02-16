@@ -58,12 +58,12 @@ def signature_RSA(message, sk, n):
 pk = (17, 3233)
 sk = 2753
 
-message_to_sign = 855
-signature_result = signature_RSA(message_to_sign, sk, pk[1])
-print("Signature pour ", message_to_sign, " : ", signature_result)
+messageASigner = 855
+resultatSignature = signature_RSA(messageASigner, sk, pk[1])
+print("Signature pour ", messageASigner, " : ", resultatSignature)
 
-verification = pow(signature_result, pk[0], pk[1])
-print("Vérification (", verification,") : ", verification == message_to_sign)
+verification = pow(resultatSignature, pk[0], pk[1])
+print("Vérification (", verification,") : ", verification == messageASigner)
 
 messageAVerifier = 2197
 signatureDuMessage = signature_RSA(messageAVerifier, sk, pk[1])
@@ -75,3 +75,4 @@ print(f"Signature pour {messageAVerifier}: {signatureDuMessage}")
 # ============
 print()
 print("=-=-=-=-=-=-= Exo 4 =-=-=-=-=-=-=-=")
+
