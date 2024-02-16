@@ -45,3 +45,33 @@ mot2 = "tungsten"
 print(" - " , mot2," --> ", hashlib.sha256(mot2.encode('utf-8')).hexdigest())
 
 
+# ============
+# Exercice 3 :
+# ============
+print()
+print("=-=-=-=-=-=-= Exo 3 =-=-=-=-=-=-=-=")
+
+def signature_RSA(message, sk, n):
+    signature = pow(message, sk, n)
+    return signature
+
+pk = (17, 3233)
+sk = 2753
+
+message_to_sign = 855
+signature_result = signature_RSA(message_to_sign, sk, pk[1])
+print("Signature pour ", message_to_sign, " : ", signature_result)
+
+verification = pow(signature_result, pk[0], pk[1])
+print("Vérification (", verification,") : ", verification == message_to_sign)
+
+messageAVerifier = 2197
+signatureDuMessage = signature_RSA(messageAVerifier, sk, pk[1])
+print(f"Signature pour {messageAVerifier}: {signatureDuMessage}")
+
+
+# ============
+# Exercice 4 :
+# ============
+print()
+print("=-=-=-=-=-=-= Exo 4 =-=-=-=-=-=-=-=")
