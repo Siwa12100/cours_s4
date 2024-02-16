@@ -1,6 +1,8 @@
 # ============
 # Exercice 1 :
 # ============
+print()
+print("=-=-=-=-=-=-= Exo 1 =-=-=-=-=-=-=-=")
 
 # 1.)
 # ---
@@ -28,3 +30,18 @@ print(G('coucou'))
 # ============
 # Exercice 2 :
 # ============
+print()
+print("=-=-=-=-=-=-= Exo 2 =-=-=-=-=-=-=-=")
+import hashlib
+
+mot="coucou"
+sha256 = hashlib.sha256(mot.encode('utf-8')).hexdigest()
+# print(sha256)
+
+mot1 = "123456789"
+print(" - " , mot1," --> ", hashlib.sha256(mot1.encode('utf-8')).hexdigest())
+
+mot2 = "tungsten"
+print(" - " , mot2," --> ", hashlib.sha256(mot2.encode('utf-8')).hexdigest())
+
+
