@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="app">
+            {{ message }}
+            <h1>{{ message2 }}</h1>
+            <form-add-article @addNews="addNews"></form-add-article>
+            <info-article></info-article>
+        </div>
+        
+
+        <script type="module">
+            import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+            import FormAddArticle from '/form-add-article'
+            import InfoArticle from '/info-article'
+
+            const app = createApp({
+                created() {
+                    document.title='Wallah'
+                },
+
+                data() {
+                    return {
+                            message : "Hello there !",
+                            message2 : 'Je suis là !',
+                            allNews : []
+                    }
+                },
+                
+                methods:{
+                    addNews: function(){
+                        console.log('index.addNews',news);
+                        this.allNews.push(news)
+                    }
+                }
+                
+            })
+            app.component('FormAddArticle', FormAddArticle)
+            app.component('InfoArticle', InfoArticle)
+            app.mount('#app')
+        </script>
+    </body>
+</html>

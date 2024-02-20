@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>My awesome blog</title>
+    </head>
+
+    <body>
+        <h1>My awesome blog</h1>
+
+        <section>
+            <h2>News form</h2>
+
+            <form>
+                <div>
+                    <label>Title</label><br/>
+                    <input type="text" name="titleToAdd" />
+                </div>
+
+                <div>
+                    <label>Description</label><br/>
+                    <textarea name="descriptionToAdd"></textarea>
+                </div>
+
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+
+        <section>
+            <h2>My news</h2>
+            <h3></h3>
+
+            <div id="newsList">
+            </div>
+        </section>
+
+        <!-- View scripts -->
+        <script src="/src/view/form-article.js"/>
+        <script src="/src/view/form.js"/>
+        <script src="/src/view/html-article.js"/>
+        <script src="/src/view/articleHTML.js"/>
+
+        <!-- DataTransferObject script-->
+        <script src="/src/dto/article.js"/>
+
+        <!-- Error script-->
+        <script src="/src/error/required-field-error.js"/>
+        
+        <!-- Service script-->
+        <script src="/src/service/articleService.js"/>
+    </body>
+
+</html>
