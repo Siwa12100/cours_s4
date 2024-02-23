@@ -119,7 +119,7 @@ print(resultat)
 # Exercice 4 :
 # ============
 print()
-print(" ------- Exo 3 -------")
+print(" ------- Exo 4 -------")
 
 
 def encodage_hamming_7_4(bits):
@@ -143,5 +143,6 @@ resultat_encodage = encodage_hamming_7_4(resultat)
 print(resultat_encodage)
 
 
-
-
+#=============
+# Exercice 5 :
+# ============
