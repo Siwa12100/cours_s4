@@ -98,7 +98,49 @@ print(decodage_hamming(extraire_bits_information(msg)))
 print()
 print(" ------- Exo 3 -------")
 
+def encodage_ascii(chaine):
+    bits_resultats = ""
 
+    for caractere in chaine:
+
+        code_ascii = ord(caractere)
+        bits_caractere = bin(code_ascii)[2:]
+        bits_caractere = '0' * (8 - len(bits_caractere)) + bits_caractere
+        bits_resultats += bits_caractere
+    
+    return bits_resultats
+
+chaine_test = "Hello"
+resultat = encodage_ascii(chaine_test)
+print(resultat)
+
+
+# ============
+# Exercice 4 :
+# ============
+print()
+print(" ------- Exo 3 -------")
+
+
+def encodage_hamming_7_4(bits):
+    bits_encodes = ""
+    for i in range(0, len(bits), 4):
+        bloc = bits[i:i+4]
+        if len(bloc) != 4:
+            break
+
+        bits_encodes += bloc[0] + bloc[1] + bloc[2] + bloc[0] + bloc[3] + bloc[1] + bloc[2] + bloc[3]
+
+        parite1 = str(int(bloc[0]) ^ int(bloc[1]) ^ int(bloc[2]))
+        parite2 = str(int(bloc[1]) ^ int(bloc[2]) ^ int(bloc[3]))
+        parite3 = str(int(bloc[0]) ^ int(bloc[1]) ^ int(bloc[3]))
+
+        bits_encodes += parite1 + parite2 + parite3
+
+    return bits_encodes
+
+resultat_encodage = encodage_hamming_7_4(resultat)
+print(resultat_encodage)
 
 
 
