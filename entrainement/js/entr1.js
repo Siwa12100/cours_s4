@@ -40,4 +40,15 @@ console.log(" ----- test avancer & klaxonner -------");
 maVoiture1.avancer();
 maVoiture1.klaxonner(7);
 
-//console.log(maVoiture1)
+console.log("---- Tests sur les types -----");
+
+let maVariable = "45.3";
+console.log(maVariable + " : " + typeof(maVariable));
+maVariable = parseFloat(maVariable);
+console.log(maVariable + " : " + typeof(maVariable));
+console.log(maVariable + " : " + typeof(maVariable == 7));
+let monAutreVariable = 89.8;
+console.log(monAutreVariable.toString()+ " : " + typeof(monAutreVariable.toString()));
+console.log(monAutreVariable.toString(2)+ " : " + typeof(monAutreVariable.toString()));
+console.log(monAutreVariable.toString(16)+ " : " + typeof(monAutreVariable.toString()));
+console.log(monAutreVariable.toString(10)+ " : " + typeof(monAutreVariable.toString()));
