@@ -59,3 +59,14 @@ const testJson = JSON.stringify(maVoiture1);
 console.log("Format json : " + testJson);
 const testRecupObj = JSON.parse(testJson);
 console.log("Format classique --> nb roues : " + testRecupObj["roues"]);
+
+console.log("---- Test boucles for -----")
+
+const tableau =  new Array("Pomme", "Poire", "Figue", "Raisin");
+for (let f in tableau) {
+    console.log("Fruit in : " + f);
+}
+
+for (let f of tableau) {
+    console.log("Fruit of : " + f);
+}
