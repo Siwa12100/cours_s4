@@ -52,3 +52,10 @@ console.log(monAutreVariable.toString()+ " : " + typeof(monAutreVariable.toStrin
 console.log(monAutreVariable.toString(2)+ " : " + typeof(monAutreVariable.toString()));
 console.log(monAutreVariable.toString(16)+ " : " + typeof(monAutreVariable.toString()));
 console.log(monAutreVariable.toString(10)+ " : " + typeof(monAutreVariable.toString()));
+
+console.log("----- Test json -------")
+
+const testJson = JSON.stringify(maVoiture1);
+console.log("Format json : " + testJson);
+const testRecupObj = JSON.parse(testJson);
+console.log("Format classique --> nb roues : " + testRecupObj["roues"]);
