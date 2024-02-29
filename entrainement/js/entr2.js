@@ -32,3 +32,19 @@ async function main() {
 }
 
 main();
+
+const user = {
+  username: "john_doe",
+  password: "secret",
+  isAdmin: false,
+};
+
+const jsonString = JSON.stringify(user, (key, value) => {
+  if (key === "password") {
+    return undefined; // Ne pas inclure le champ "password"
+  }
+  return value; // Sinon, utilise la valeur par défaut
+});
+
+console.log(jsonString);
+// Résultat : '{"username":"john_doe","isAdmin":false}'
