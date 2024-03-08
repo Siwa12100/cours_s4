@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b8a9e026-b50c-4893-8fe5-cdf8deae915a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/.idea/libraries/junit_jupiter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/src/fibonacci/Fibonacci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/src/tests/FibonacciTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3-qualite-dev/tp3-qualite-dev.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/JeuMorpionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../temporaire/inspiJsAtn/TP2/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/../../temporaire/inspiJsAtn/TP2/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../temporaire/inspiJsAtn/TP4/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/../../temporaire/inspiJsAtn/TP4/node_modules/.bin/mime" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2dJqezelRIzGZwDL5WgyVkIWAcQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/jeanm/OneDrive/Documents/BUT/cours_s4/qualiteDev/tp4/tp4_exo1"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="JeuMorpionTests.testJoueurNonGagnant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tp4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.JeuMorpionTests" />
+      <option name="METHOD_NAME" value="testJoueurNonGagnant" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JeuMorpionTests.testJoueurNonGagnant" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8a9e026-b50c-4893-8fe5-cdf8deae915a" name="Changes" comment="" />
+      <created>1709736627983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709736627983</updated>
+    </task>
+    <servers />
+  </component>
+</project>
