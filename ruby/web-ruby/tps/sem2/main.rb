@@ -1,6 +1,7 @@
 require_relative 'creature'
 require_relative 'troll'
 require_relative 'gobelin'
+require_relative 'compagnie'
 
 puts()
 puts("=-=-=-= Test Creature =-=-=-=-=")
@@ -34,3 +35,8 @@ puts("=-=-=-=-=-= Test de Soignable =-=-=-=-=")
 c3 = Creature.new("Drac", 100)
 c3.soigner(20)
 puts(c3)
+
+puts()
+puts("=-=-=-=-=-= Test de la compagnie =-=-=-=-=-=")
+
+comp1 = Compagnie.new("Les joyeux de la couronne")
