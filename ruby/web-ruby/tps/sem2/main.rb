@@ -40,3 +40,8 @@ puts()
 puts("=-=-=-=-=-= Test de la compagnie =-=-=-=-=-=")
 
 comp1 = Compagnie.new("Les joyeux de la couronne")
+comp1.ajouter(c3)
+comp1.ajouter(c1)
+comp1.ajouter(c2)
+
+puts(comp1)

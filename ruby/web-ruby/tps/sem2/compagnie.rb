@@ -15,4 +15,14 @@ class Compagnie
             |elmt | elmt.nom == aventurier.nom
         }
     end
+
+    def to_s
+        texte = "Compagnie : " + @nom + "\n" + " - Membres  : " + "\n"
+
+        @aventuriers.each do | elmt |
+            texte = "\t - #{elmt.nom} (#{elmt.pv})."
+        end
+
+        return texte
+    end
 end
