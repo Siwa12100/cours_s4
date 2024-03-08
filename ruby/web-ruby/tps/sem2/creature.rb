@@ -1,4 +1,9 @@
+require_relative 'Soignable'
+
 class Creature
+
+    include Soignable
+
     def initialize(nom, pv)
         @nom, @pv = nom, pv
     end
@@ -24,6 +29,6 @@ class Creature
     end
 
     def to_s
-        "Creature #{@nom} : #{@pv}pv"
+        "Creature -> #{@nom} : #{@pv}pv"
     end
 end
