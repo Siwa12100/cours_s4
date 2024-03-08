@@ -45,3 +45,6 @@ comp1.ajouter(c1)
 comp1.ajouter(c2)
 
 puts(comp1)
+puts(comp1.find(c2))
+puts(comp1.existe?(g1))
+puts(comp1.existe?(c3))
