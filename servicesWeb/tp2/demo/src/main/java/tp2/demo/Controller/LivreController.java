@@ -40,6 +40,9 @@ public class LivreController {
         return livre;
     }
 
+    @PostMapping(value="/saveall")
+    public @ResponseBody List<Livre> saveAll
+
     @GetMapping(value="/getError")
     public void getError(){
         throw new LivreException("Erreur marchée !");
