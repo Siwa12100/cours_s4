@@ -64,9 +64,36 @@ console.log("---- Test boucles for -----")
 
 const tableau =  new Array("Pomme", "Poire", "Figue", "Raisin");
 for (let f in tableau) {
-    console.log("Fruit in : " + f);
+    console.log("Fruit in : " + f + " -> " + tableau[f]);
 }
 
 for (let f of tableau) {
     console.log("Fruit of : " + f);
 }
+
+for (let prop in maVoiture1) {
+    console.log(prop + " -> " + maVoiture1[prop]);
+}
+
+let monObjet = {
+
+    nom : "Louis", 
+    age : 45
+}
+
+for (let propriete in monObjet) {
+
+    console.log(propriete + " -> " + monObjet[propriete]); // Va afficher nom -> Louis, puis age -> 45
+}
+
+
+console.log("---- Test du parcours d'arguments -----")
+
+function parcoursStrings() {
+
+    for (let i = 0; i < arguments.length; i++) {
+        console.log(" - " + i + "). " + arguments[i] + ".");
+    }
+}
+
+parcoursStrings("Pomme", "Poire", "Prune", "Raisin");
