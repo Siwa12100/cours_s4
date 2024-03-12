@@ -31,4 +31,8 @@ public class Lampe {
 	public int getNiveau() {
 		return niveau;
 	}
+
+	public String getLocalisation() {
+		return this.localisation;
+	}
 }
