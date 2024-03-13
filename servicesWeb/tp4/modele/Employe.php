@@ -18,4 +18,9 @@ class Employe implements \JsonSerializable{
             'nom' => $this->nom
         ];
     }
+
+    public function setNom($nouveauNom) {
+
+        $this -> nom = $nouveauNom;
+    }
 }
