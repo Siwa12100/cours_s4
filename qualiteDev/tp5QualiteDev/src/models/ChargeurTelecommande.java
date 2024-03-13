@@ -34,4 +34,7 @@ public class ChargeurTelecommande {
 		System.out.println("--- Exécution de Macro Arret ---");
 		remoteControl.boutonArretPresse(0);
 	}
+
+
+
 }

@@ -17,7 +17,7 @@ public class LampeTest {
         Lampe lampe = new Lampe("Cuisine");
 
         assertEquals(0, lampe.getNiveau());
-        assertEquals("salon", lampe.getLocalisation());
+        assertEquals("Cuisine", lampe.getLocalisation());
         assertNotNull(lampe);
 
     }
