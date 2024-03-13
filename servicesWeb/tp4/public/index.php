@@ -55,16 +55,16 @@ $app->get('/employees/{id}', function (Request $request, Response $response, $ar
 $app->post('/employees', function (Request $request, Response $response, $args) use ($listeEmployes) {
     $data = $request->getParsedBody();
 
-    // Créer un nouvel employé avec les données fournies
+
     $nouvelEmploye = new Employe(count($listeEmployes) + 1, $data['nom']); // Assurez-vous que 'nom' est défini dans les données
 
-    // Ajouter le nouvel employé à la liste
+
     $listeEmployes[] = $nouvelEmploye;
 
     $jsonEmploye = json_encode($nouvelEmploye, JSON_PRETTY_PRINT);
     $response->getBody()->write($jsonEmploye);
 
-    return $response->withStatus(201); // Code HTTP 201 Created
+    return $response->withStatus(201); 
 });
 
 $app->put('/employees/{id}', function (Request $request, Response $response, $args) use ($listeEmployes) {
@@ -73,8 +73,7 @@ $app->put('/employees/{id}', function (Request $request, Response $response, $ar
     if (isset($listeEmployes[$id])) {
         $data = $request->getParsedBody();
 
-        // Mettre à jour l'employé existant
-        $listeEmployes[$id]->setNom($data['nom']); // Assurez-vous que 'nom' est défini dans les données
+        $listeEmployes[$id]->setNom($data['nom']);
 
         $jsonEmploye = json_encode($listeEmployes[$id], JSON_PRETTY_PRINT);
         $response->getBody()->write($jsonEmploye);
@@ -90,7 +89,7 @@ $app->delete('/employees/{id}', function (Request $request, Response $response, 
     $id = $args['id'];
 
     if (isset($listeEmployes[$id])) {
-        // Supprimer l'employé existant
+        
         unset($listeEmployes[$id]);
 
         $response->getBody()->write("Employé avec l'ID $id supprimé");
