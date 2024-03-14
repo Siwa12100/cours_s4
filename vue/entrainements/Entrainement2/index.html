@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Instance Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+
+    <div id="app">
+
+    <h1> Haut de la page </h1>
+    <h3> Message de la racine : {{ message }} </h3>
+    <h3> =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</h3>
+
+    <mon-premier-composant></mon-premier-composant>
+    <mon-second-composant></mon-second-composant>
+    <troisieme-composant message="coucou-props !" :nombre="4"></troisieme-composant>
+    
+    </div>
+
+    <br>
+    <h3> =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</h3>
+    <h3>Fin de la page </h3>
+
+    <script src="./src/composants/premierComposant.js"></script>
+    <script src="./src/composants/secondComposant.js"></script>
+    <script src="./src/composants/troisiemeComposants.js"></script>
+
+    <script src="src/main.js"></script>
+    </body>
+</html>
