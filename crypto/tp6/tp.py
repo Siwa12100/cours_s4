@@ -112,6 +112,9 @@ def Verification2(conn):
 # AfficherUtilisateurs(connection)
 # Verification2(connection)
 
+print()
+print("--- Exo 3 : ---")
+
 # ----------------
 
 
