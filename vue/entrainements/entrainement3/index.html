@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entrainement</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <h1>Haut de la page</h1>
+    <div id="app">
+
+        <navbar :links="liensNavBar"></navbar>
+
+        <h2>Msg : {{ msg }}</h2>
+        <article-component :ptitre="'Article test !'" :pdescription="'texte......'"></article-component>
+    </div>
+
+
+    <script src="src/data/Liens.js"></script>
+    <script src="src/composants/Navbar.js"></script>
+    <script src="src/composants/Article.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
